@@ -43,8 +43,8 @@ export default function PostSelector() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             style={{
-              ringColor: accentColor,
-            }}
+              '--tw-ring-color': accentColor,
+            } as React.CSSProperties}
           >
             <p className={`text-3xl font-bold mb-2 ${textColor}`}>{option.label}</p>
             <p className={`text-2xl font-bold ${textColor}`}>${option.price}</p>

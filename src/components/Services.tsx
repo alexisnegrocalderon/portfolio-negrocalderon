@@ -104,8 +104,8 @@ export default function Services() {
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
               style={{
-                ringColor: accentColor,
-              }}
+                '--tw-ring-color': accentColor,
+              } as React.CSSProperties}
             >
               <p className="text-4xl mb-3">{service.icon}</p>
               <p className={`text-2xl font-bold mb-2 ${textColor}`}>

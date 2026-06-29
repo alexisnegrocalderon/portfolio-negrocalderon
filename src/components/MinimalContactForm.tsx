@@ -83,7 +83,7 @@ ${formData.descripcion}
               onChange={handleChange}
               required
               className={`w-full p-3 rounded-lg ${inputBg} border border-gray-400 focus:outline-none focus:ring-2`}
-              style={{ focusRingColor: accentColor }}
+              style={{ '--tw-ring-color': accentColor } as React.CSSProperties}
             />
           </div>
           <div>
